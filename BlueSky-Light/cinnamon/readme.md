@@ -6,9 +6,9 @@ This themes base on <b>Arc-Theme</b> </br>
 
 # Installation
 
-Cinnamon Themes : Extract Archive File On Directory /.themes or /usr/share/themes (as root) on Cinnamon Desktop Environment
-Have been tested on : Linux Mint Cinnamon 19 Tara
-Download themes : https://www.opendesktop.org/p/1279115/
+<b>Cinnamon Themes :</b> Extract Archive File On Directory /.themes or /usr/share/themes (as root) on Cinnamon Desktop Environment</br>
+<b>Have been tested on :</b> Linux Mint Cinnamon 19 Tara</br>
+<b>Download themes :</b> https://www.opendesktop.org/p/1279115/</br>
 
 # Change the themes
 
