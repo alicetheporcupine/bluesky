@@ -952,6 +952,8 @@ headerbar,
 
 .titlebar {
   border-radius: 4px 4px 0 0; }
+  .titlebar .stack-switcher .text-button:checked {
+    background-image: linear-gradient(to bottom right, #417AC3 30%, #6090cd 70%); }
 
 headerbar entry, headerbar button, headerbar separator {
   margin-top: 6px;
