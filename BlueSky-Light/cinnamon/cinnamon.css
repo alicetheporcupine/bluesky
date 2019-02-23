@@ -251,7 +251,9 @@ StScrollBar {
   .popup-combo-menu .popup-sub-menu {
     background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("light-assets/menu/submenu.svg") 9 9 9 9; }
+    background-color: #dde0f7;
+    margin-left: 20px;
+    margin-right: 20px; }
     .menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-combo-menu .popup-sub-menu .popup-menu-item:ltr {
