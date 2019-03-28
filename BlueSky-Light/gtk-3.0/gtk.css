@@ -952,6 +952,9 @@ headerbar,
 
 .titlebar {
   border-radius: 4px 4px 0 0; }
+  .titlebar .title {
+    background-image: -gtk-gradient(linear, 1 1, 0 0, color-stop(0, #6895cf), color-stop(0.6, #6895cf), color-stop(1, #417AC3));
+    border-radius: 20px; }
   .titlebar .stack-switcher .text-button:checked {
     background-image: linear-gradient(to bottom right, #417AC3 30%, #6090cd 70%); }
 
