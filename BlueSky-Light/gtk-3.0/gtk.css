@@ -1769,11 +1769,11 @@ scrollbar {
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
-    background-color: #979aa5; }
+    background-image: -gtk-gradient(linear, 0 0, 0 1, color-stop(0, #b5cbe8), color-stop(0.2, transparent), color-stop(1, transparent)); }
     scrollbar slider:hover {
-      background-color: #aeb0bb; }
+      background-image: -gtk-gradient(linear, 0 0, 0 1, color-stop(0, #b5cbe8), color-stop(0.3, #d0d7e4), color-stop(1, #d9dfea)); }
     scrollbar slider:hover:active {
-      background-color: #417AC3; }
+      background-image: -gtk-gradient(linear, 0 0, 0 1, color-stop(0, #417AC3), color-stop(0.3, #c9d2e0), color-stop(1, #d0d7e4)); }
     scrollbar slider:disabled {
       background-color: transparent; }
   scrollbar.fine-tune slider {
@@ -1791,8 +1791,8 @@ scrollbar {
       margin: 0;
       min-width: 4px;
       min-height: 4px;
-      background-color: #535764;
-      border: 1px solid rgba(255, 255, 255, 0.6); }
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      background-image: -gtk-gradient(linear, 0 0, 0 1, color-stop(0, #8fb0db), color-stop(0.2, transparent), color-stop(1, transparent)); }
     scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider {
       margin: 0 2px;
       min-width: 40px; }
