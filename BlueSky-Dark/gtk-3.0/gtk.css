@@ -2977,6 +2977,16 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
     background-color: rgba(43, 84, 137, 0.67);
     color: rgba(255, 255, 255, 0.67); }
 
+dialog {
+  background-image: linear-gradient(to left, #1b2534 50%, #1F2A3B 50%); }
+  dialog .text-button {
+    background-image: linear-gradient(to top left, #0f141d 60%, #21416a); }
+    dialog .text-button:hover {
+      background-image: linear-gradient(#2B5489, #2B5489);
+      color: #ffffff; }
+  dialog .suggested-action {
+    background-image: linear-gradient(to top left, #0f141d 60%, #21416a); }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #1f2a3b; }
