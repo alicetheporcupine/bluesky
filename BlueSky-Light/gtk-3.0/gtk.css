@@ -2982,13 +2982,16 @@ modelbutton.flat:selected arrow, treeview.view:selected, treeview.view:selected:
 
 dialog {
   background-image: linear-gradient(to left, #fafafa 50%, #ffffff 50%); }
-  dialog .text-button {
+  dialog button .text-button {
     background-image: linear-gradient(to top left, #6895cf 60%, #3567a7); }
-    dialog .text-button:hover {
+    dialog button .text-button:hover {
       background-image: linear-gradient(#417AC3, #417AC3);
       color: #ffffff; }
-  dialog .suggested-action {
+  dialog button .suggested-action {
     background-image: linear-gradient(to top left, #6895cf 60%, #3567a7); }
+    dialog button .suggested-action:hover {
+      background-image: linear-gradient(#417AC3, #417AC3);
+      color: #ffffff; }
 
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
@@ -4130,6 +4133,9 @@ filechooser .nautilus-desktop,
     .nemo-window .sidebar .view.cell:selected, .nemo-window .sidebar iconview.cell:selected, .nemo-window .sidebar row.cell:selected {
       background-color: #417AC3;
       color: #ffffff; }
+      .nemo-window .sidebar .view.cell:selected:hover, .nemo-window .sidebar iconview.cell:selected:hover, .nemo-window .sidebar row.cell:selected:hover {
+        color: #ffffff;
+        background-color: #417AC3; }
     .nemo-window .sidebar .view.cell:hover, .nemo-window .sidebar iconview.cell:hover, .nemo-window .sidebar row.cell:hover {
       background-color: rgba(15, 20, 35, 0.05); }
     .nemo-window .sidebar .view.expander, .nemo-window .sidebar iconview.expander, .nemo-window .sidebar row.expander {
