@@ -1089,6 +1089,12 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
   headerbar .linked:not(.vertical).path-bar > button:hover {
+    /*//background-color: lighten($header_button_bg, 15%);
+    //add 1.0
+    background-color: if($variant == 'dark' or $darker == 'true', lighten($header_button_bg, 15%), lighten($selected_bg_color, 25%));
+        //add 1.1
+        color: if($variant=='dark' or $darker=='true', transparentize($selected_fg_color,0.4), transparentize($selected_fg_color, 0.1));
+    //*/
     background-color: rgba(79, 108, 153, 0.4);
     color: rgba(255, 255, 255, 0.6); }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
@@ -3093,7 +3099,8 @@ popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-can
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:not(:last-child):not(:only-child) {
     margin: 0 0 1px 0; }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:hover {
-    background-color: rgba(79, 108, 153, 0.4); }
+    background-color: rgba(79, 108, 153, 0.4);
+    color: rgba(255, 255, 255, 0.6); }
   .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:active, .nemo-window .primary-toolbar widget.raised.linked:not(.vertical):not(.path-bar) > button:checked {
     color: #ffffff;
     border-color: transparent;
