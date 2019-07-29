@@ -3029,6 +3029,11 @@ terminal-window notebook > header.top,
   color: #ffffff;
   background-color: #2B5489; }
 
+.nemo-window notebook > stack .view, .nemo-window notebook > stack iconview {
+  background-image: linear-gradient(to right, #1b2534 50%, #1F2A3B 50%);
+  color: #E4E7EA; }
+  .nemo-window notebook > stack .view:selected, .nemo-window notebook > stack iconview:selected {
+    color: #E4E7EA; }
 .nemo-window .nemo-places-sidebar.frame {
   border-width: 0; }
 .nemo-window notebook {
@@ -4093,9 +4098,11 @@ filechooser headerbar widget stack box.path-bar-box,
 }
 //*/
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
-  background-color: black; }
+  background-image: linear-gradient(to left, #131924 50%, #131924 50%);
+  color: rgba(228, 231, 234, 0.78); }
 .nemo-window .nemo-inactive-pane .iconview {
-  background-color: black; }
+  background-image: linear-gradient(to left, #131924 50%, #131924 50%);
+  color: rgba(228, 231, 234, 0.78); }
 .nemo-window .sidebar {
   color: #E4E7EA;
   background-color: rgba(25, 29, 35, 0.93); }
