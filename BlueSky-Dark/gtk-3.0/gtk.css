@@ -876,6 +876,22 @@ headerbar, .titlebar:not(headerbar) {
   color: rgba(226, 231, 236, 0.8);
   background-color: #0f141d;
   box-shadow: inset 0 1px #141b27; }
+  headerbar buttonbox button,
+  .titlebar:not(headerbar) buttonbox button {
+    border-color: rgba(0, 0, 0, 0.4);
+    color: #2B5489;
+    background-color: rgba(60, 82, 116, 0.4); }
+    headerbar buttonbox button:hover,
+    .titlebar:not(headerbar) buttonbox button:hover {
+      background-color: rgba(55, 75, 106, 0.4);
+      color: rgba(226, 231, 236, 0.8);
+      border-color: rgba(55, 75, 106, 0.4); }
+    headerbar buttonbox button:checked,
+    .titlebar:not(headerbar) buttonbox button:checked {
+      color: #ffffff;
+      border-color: transparent;
+      background-color: #2B5489;
+      background-image: linear-gradient(to bottom right, #22436e 30%, #3567a8 70%); }
   .csd headerbar,
   .csd .titlebar:not(headerbar) {
     background-color: #0f141d;
