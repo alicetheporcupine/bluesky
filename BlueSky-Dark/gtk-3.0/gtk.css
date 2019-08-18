@@ -2964,6 +2964,14 @@ dialog {
       background-image: linear-gradient(#2B5489, #2B5489);
       color: #ffffff; }
 
+.background stack > box > stack {
+  background-image: linear-gradient(to left, #1b2534 50%, #1F2A3B 50%);
+  padding: 10px; }
+  .background stack > box > stack > box > box > box > label {
+    padding: 6px;
+    background-color: #2B5489;
+    color: #ffffff; }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #1f2a3b; }
