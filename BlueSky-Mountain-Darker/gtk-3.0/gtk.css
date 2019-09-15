@@ -4530,3 +4530,26 @@ filechooser placessidebar.sidebar scrollbar,
 
 .budgie-settings-window .sidebar {
   background-color: #fafafa; }
+
+.budgie-run-dialog {
+  background-color: #ffffff;
+  border-radius: 1px;
+  border-color: #ffffff;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.07); }
+  .budgie-run-dialog entry.search {
+    background-color: #ffffff;
+    color: #0F1423;
+    border-radius: 1px;
+    border-color: base_color;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(65, 122, 195, 0.56);
+    box-shadow: none; }
+    .budgie-run-dialog entry.search image {
+      color: #0F1423; }
+    .budgie-run-dialog entry.search label {
+      color: #0F1423; }
+    .budgie-run-dialog entry.search:focus {
+      box-shadow: none;
+      border-color: #ffffff;
+      border-bottom: 1px solid #417AC3; }
