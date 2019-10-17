@@ -3649,6 +3649,27 @@ panel-toplevel.background button:not(#tasklist-button), .xfce4-panel.panel butto
 .menu .spinner {
   opacity: 1; }
 
+.thunar .sidebar .view, .thunar .sidebar iconview {
+  background-color: rgba(239, 240, 241, 0.93);
+  color: #0F1423; }
+  .thunar .sidebar .view.cell:selected, .thunar .sidebar iconview.cell:selected, .thunar .sidebar .view.cell:selected:hover, .thunar .sidebar iconview.cell:selected:hover {
+    background: #417AC3;
+    color: #ffffff; }
+  .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
+    background-color: rgba(228, 230, 231, 0.93);
+    color: #0F1423; }
+.thunar notebook .view, .thunar notebook iconview {
+  background-color: #ffffff;
+  background-image: -gtk-gradient(linear, 0 0, 1 0, color-stop(0, #ffffff), color-stop(0.2, #ffffff), color-stop(0.2, #fafafa), color-stop(0.4, #fafafa), color-stop(0.4, #ffffff), color-stop(0.6, #ffffff), color-stop(0.6, #fafafa), color-stop(0.8, #fafafa), color-stop(0.8, #ffffff), color-stop(1, #ffffff));
+  color: #0F1423; }
+  .thunar notebook .view .rubberband, .thunar notebook iconview .rubberband {
+    background-color: rgba(50, 98, 159, 0.2);
+    background-image: linear-gradient(to right, transparent, transparent); }
+  .thunar notebook .view:selected, .thunar notebook iconview:selected {
+    background-color: #417AC3;
+    background-image: linear-gradient(to right, #417AC3, #417AC3);
+    color: #ffffff; }
+
 UnityDecoration {
   -UnityDecoration-extents: 28px 1 1 1;
   -UnityDecoration-input-extents: 10px;
