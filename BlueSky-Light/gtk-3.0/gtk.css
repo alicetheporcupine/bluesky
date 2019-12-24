@@ -66,7 +66,8 @@ flowbox flowboxchild {
   flowbox flowboxchild:selected {
     outline-offset: -2px; }
 
-label.separator, popover label.separator, popover.background label.separator {
+label.separator, popover label.separator,
+popover.background label.separator {
   color: #0F1423; }
 label selection {
   color: #ffffff;
@@ -74,7 +75,9 @@ label selection {
 label:disabled {
   color: rgba(15, 20, 35, 0.55); }
 
-.dim-label, label.separator, popover label.separator, popover.background label.separator, headerbar .subtitle, .titlebar:not(headerbar) .subtitle {
+.dim-label, label.separator, popover label.separator,
+popover.background label.separator, headerbar .subtitle,
+.titlebar:not(headerbar) .subtitle {
   opacity: 0.55; }
 
 assistant .sidebar {
@@ -91,7 +94,11 @@ assistant .sidebar label.highlight {
 textview {
   background-color: #ffffff; }
 
-popover.osd, popover.magnifier, .csd popover.osd, .csd popover.magnifier, popover.background.osd, popover.background.magnifier, .csd popover.background.osd, .csd popover.background.magnifier, .osd .scale-popup, .osd {
+popover.osd, popover.magnifier, .csd popover.osd, .csd popover.magnifier,
+popover.background.osd,
+popover.background.magnifier, .csd
+popover.background.osd, .csd
+popover.background.magnifier, .osd .scale-popup, .osd {
   color: #0F1423;
   border: none;
   background-color: rgba(239, 240, 241, 0.93);
@@ -734,7 +741,8 @@ modelbutton.flat arrow.right {
     color: #32629f; }
     *:selected *:link:active, *:selected button:active:link, *:selected button:active:visited {
       color: #d9e4f3; }
-  infobar.info :link, infobar.question :link, infobar.warning :link, infobar.error :link, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link, .selection-mode.titlebar:not(headerbar) .subtitle:link, *:selected *:link, *:selected button:link, *:selected button:visited {
+  infobar.info *:link, infobar.info button:link, infobar.info button:visited, infobar.question *:link, infobar.question button:link, infobar.question button:visited, infobar.warning *:link, infobar.warning button:link, infobar.warning button:visited, infobar.error *:link, infobar.error button:link, infobar.error button:visited, *:link:selected, button:selected:link, button:selected:visited, headerbar.selection-mode .subtitle:link,
+  .selection-mode.titlebar:not(headerbar) .subtitle:link, *:selected *:link, *:selected button:link, *:selected button:visited {
     color: #d9e4f3; }
 
 button:link > label, button:visited > label {
@@ -866,7 +874,8 @@ actionbar {
   border-top: 1px solid #cdd1f3;
   background-color: #e6e8f9; }
 
-headerbar, .titlebar:not(headerbar) {
+headerbar,
+.titlebar:not(headerbar) {
   min-height: 42px;
   padding: 0 7px;
   border-width: 0 0 1px;
@@ -891,54 +900,78 @@ headerbar, .titlebar:not(headerbar) {
       border-color: #417AC3;
       background-color: #417AC3;
       background-image: linear-gradient(to bottom right, #417AC3 30%, #6090cd 70%); }
-  .csd headerbar,
-  .csd .titlebar:not(headerbar) {
+  .csd headerbar, .csd
+  .titlebar:not(headerbar) {
     background-color: #6895cf;
     border-color: #4d82c7; }
-  headerbar:backdrop, .titlebar:backdrop:not(headerbar) {
+  headerbar:backdrop,
+  .titlebar:backdrop:not(headerbar) {
     transition: 200ms ease-out;
     color: rgba(13, 19, 38, 0.5);
     background-color: #739dd3; }
-    .csd headerbar:backdrop, .csd .titlebar:backdrop:not(headerbar) {
+    .csd headerbar:backdrop, .csd
+    .titlebar:backdrop:not(headerbar) {
       background-color: #739dd3; }
-  headerbar .title, .titlebar:not(headerbar) .title {
+  headerbar .title,
+  .titlebar:not(headerbar) .title {
     padding-left: 12px;
     padding-right: 12px; }
-  headerbar .subtitle, .titlebar:not(headerbar) .subtitle {
+  headerbar .subtitle,
+  .titlebar:not(headerbar) .subtitle {
     font-size: smaller;
     padding-left: 12px;
     padding-right: 12px; }
-  headerbar.selection-mode, .selection-mode.titlebar:not(headerbar) {
+  headerbar.selection-mode,
+  .selection-mode.titlebar:not(headerbar) {
     color: #ffffff;
     background-color: rgba(65, 122, 195, 0.95);
     border-color: rgba(58, 112, 182, 0.95);
     box-shadow: none; }
-    headerbar.selection-mode:backdrop, .selection-mode.titlebar:backdrop:not(headerbar) {
+    headerbar.selection-mode:backdrop,
+    .selection-mode.titlebar:backdrop:not(headerbar) {
       background-color: rgba(65, 122, 195, 0.95);
       color: rgba(255, 255, 255, 0.6); }
-    headerbar.selection-mode .selection-menu, .selection-mode.titlebar:not(headerbar) .selection-menu {
+    headerbar.selection-mode .selection-menu,
+    .selection-mode.titlebar:not(headerbar) .selection-menu {
       box-shadow: none;
       padding-left: 10px;
       padding-right: 10px; }
-      headerbar.selection-mode .selection-menu GtkArrow, .selection-mode.titlebar:not(headerbar) .selection-menu GtkArrow {
+      headerbar.selection-mode .selection-menu GtkArrow,
+      .selection-mode.titlebar:not(headerbar) .selection-menu GtkArrow {
         -GtkArrow-arrow-scaling: 1; }
-      headerbar.selection-mode .selection-menu .arrow, .selection-mode.titlebar:not(headerbar) .selection-menu .arrow {
+      headerbar.selection-mode .selection-menu .arrow,
+      .selection-mode.titlebar:not(headerbar) .selection-menu .arrow {
         -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-    .maximized headerbar.selection-mode, .maximized .selection-mode.titlebar:not(headerbar) {
+    .maximized headerbar.selection-mode, .maximized
+    .selection-mode.titlebar:not(headerbar) {
       background-color: #417ac3; }
-  .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop, .tiled .titlebar:not(headerbar), .tiled .titlebar:backdrop:not(headerbar), .maximized .titlebar:not(headerbar), .maximized .titlebar:backdrop:not(headerbar) {
+  .tiled headerbar, .tiled headerbar:backdrop, .maximized headerbar, .maximized headerbar:backdrop, .tiled
+  .titlebar:not(headerbar), .tiled
+  .titlebar:backdrop:not(headerbar), .maximized
+  .titlebar:not(headerbar), .maximized
+  .titlebar:backdrop:not(headerbar) {
     border-radius: 0; }
-  .maximized headerbar, .maximized .titlebar:not(headerbar) {
+  .maximized headerbar, .maximized
+  .titlebar:not(headerbar) {
     background-color: #6895cf;
     border-color: #4d82c7; }
-    .maximized headerbar:backdrop, .maximized .titlebar:backdrop:not(headerbar) {
+    .maximized headerbar:backdrop, .maximized
+    .titlebar:backdrop:not(headerbar) {
       background-color: #739dd3; }
-  headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop, .default-decoration.titlebar:not(headerbar), .csd .default-decoration.titlebar:not(headerbar), .default-decoration.titlebar:backdrop:not(headerbar), .csd .default-decoration.titlebar:backdrop:not(headerbar) {
+  headerbar.default-decoration, .csd headerbar.default-decoration, headerbar.default-decoration:backdrop, .csd headerbar.default-decoration:backdrop,
+  .default-decoration.titlebar:not(headerbar), .csd
+  .default-decoration.titlebar:not(headerbar),
+  .default-decoration.titlebar:backdrop:not(headerbar), .csd
+  .default-decoration.titlebar:backdrop:not(headerbar) {
     min-height: 28px;
     padding: 0 3px;
     background-color: #6895cf;
     border-bottom-width: 0; }
-    .maximized headerbar.default-decoration, .maximized .csd headerbar.default-decoration, .maximized headerbar.default-decoration:backdrop, .maximized .csd headerbar.default-decoration:backdrop, .maximized .default-decoration.titlebar:not(headerbar), .maximized .csd .default-decoration.titlebar:not(headerbar), .maximized .default-decoration.titlebar:backdrop:not(headerbar), .maximized .csd .default-decoration.titlebar:backdrop:not(headerbar) {
+    .maximized headerbar.default-decoration, .maximized .csd headerbar.default-decoration, .maximized headerbar.default-decoration:backdrop, .maximized .csd headerbar.default-decoration:backdrop, .maximized
+    .default-decoration.titlebar:not(headerbar), .maximized .csd
+    .default-decoration.titlebar:not(headerbar), .maximized
+    .default-decoration.titlebar:backdrop:not(headerbar), .maximized .csd
+    .default-decoration.titlebar:backdrop:not(headerbar) {
       background-color: #6895cf; }
 
 .titlebar {
@@ -969,13 +1002,15 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
 .titlebar:not(headerbar) > separator {
   background-image: linear-gradient(to bottom, #4d82c7, #4d82c7); }
 
-.primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton, .titlebar:not(headerbar) separator.titlebutton {
+.primary-toolbar:not(.libreoffice-toolbar) separator, headerbar separator.titlebutton,
+.titlebar:not(headerbar) separator.titlebutton {
   min-width: 1px;
   min-height: 1px;
   background: none;
   border-width: 0 1px;
   border-image: linear-gradient(to bottom, rgba(13, 19, 38, 0) 25%, rgba(13, 19, 38, 0.15) 25%, rgba(13, 19, 38, 0.15) 75%, rgba(13, 19, 38, 0) 75%) 0 1/0 1px stretch; }
-  .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop, headerbar separator.titlebutton:backdrop, .titlebar:not(headerbar) separator.titlebutton:backdrop {
+  .primary-toolbar:not(.libreoffice-toolbar) separator:backdrop, headerbar separator.titlebutton:backdrop,
+  .titlebar:not(headerbar) separator.titlebutton:backdrop {
     opacity: 0.6; }
 
 .primary-toolbar entry, headerbar entry {
@@ -1460,43 +1495,54 @@ menubar,
       color: rgba(13, 19, 38, 0.2);
       border-color: transparent; }
 
-menu, .menu {
+menu,
+.menu {
   color: white;
   margin: 4px;
   padding: 0;
   border-radius: 0;
   background-color: #4d82c7;
   border: 1px solid #cdd1f3; }
-  .csd menu,
-  .csd .menu {
+  .csd menu, .csd
+  .menu {
     background-color: #4d82c7;
     padding: 4px 0px;
     border-radius: 2px;
     border: none; }
-    .csd menu :hover,
-    .csd .menu :hover {
+    .csd menu :hover, .csd
+    .menu :hover {
       background-color: #3c75be; }
-  menu separator, .csd menu separator, .menu separator, .csd .menu separator {
+  menu separator, .csd menu separator,
+  .menu separator, .csd
+  .menu separator {
     margin: 2px 0;
     background-color: #4d82c7; }
-  menu .separator:not(label), .csd menu .separator:not(label), .menu .separator:not(label), .csd .menu .separator:not(label) {
+  menu .separator:not(label), .csd menu .separator:not(label),
+  .menu .separator:not(label), .csd
+  .menu .separator:not(label) {
     color: #4d82c7; }
-  menu menuitem, .menu menuitem {
+  menu menuitem,
+  .menu menuitem {
     min-height: 16px;
     min-width: 40px;
     padding: 5px; }
-    menu menuitem:hover, .menu menuitem:hover {
+    menu menuitem:hover,
+    .menu menuitem:hover {
       background-color: #3c75be;
       color: #ffffff; }
-    menu menuitem:disabled, .menu menuitem:disabled {
+    menu menuitem:disabled,
+    .menu menuitem:disabled {
       color: rgba(15, 20, 35, 0.55); }
-    menu menuitem arrow, .menu menuitem arrow {
+    menu menuitem arrow,
+    .menu menuitem arrow {
       min-height: 16px;
       min-width: 16px; }
-      menu menuitem arrow:dir(ltr), .menu menuitem arrow:dir(ltr) {
+      menu menuitem arrow:dir(ltr),
+      .menu menuitem arrow:dir(ltr) {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
         margin-left: 10px; }
-      menu menuitem arrow:dir(rtl), .menu menuitem arrow:dir(rtl) {
+      menu menuitem arrow:dir(rtl),
+      .menu menuitem arrow:dir(rtl) {
         -gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
         margin-right: 10px; }
     menuitem accelerator {
@@ -1510,7 +1556,8 @@ menu, .menu {
       menuitem check:dir(rtl), menuitem radio:dir(rtl) {
         margin-left: 6px;
         margin-right: 2px; }
-  menu > arrow, .menu > arrow {
+  menu > arrow,
+  .menu > arrow {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
@@ -1519,37 +1566,45 @@ menu, .menu {
     padding: 4px;
     background-color: #4d82c7;
     border-radius: 0; }
-    menu > arrow.top, .menu > arrow.top {
+    menu > arrow.top,
+    .menu > arrow.top {
       margin-top: -6px;
       border-bottom: 1px solid #e7e8e9;
       -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
-    menu > arrow.bottom, .menu > arrow.bottom {
+    menu > arrow.bottom,
+    .menu > arrow.bottom {
       margin-bottom: -6px;
       border-top: 1px solid #e7e8e9;
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
-    menu > arrow:hover, .menu > arrow:hover {
+    menu > arrow:hover,
+    .menu > arrow:hover {
       background-color: #e7e8e9; }
-    menu > arrow:disabled, .menu > arrow:disabled {
+    menu > arrow:disabled,
+    .menu > arrow:disabled {
       color: transparent;
       background-color: transparent;
       border-color: transparent; }
 
-popover, popover.background {
+popover,
+popover.background {
   padding: 2px;
   border-radius: 3px;
   background-clip: border-box;
   background-color: #ffffff;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.07); }
-  .csd popover, popover,
-  .csd popover.background, popover.background {
+  .csd popover, popover, .csd
+  popover.background,
+  popover.background {
     border: 1px solid #b8bdef; }
-  popover separator, popover.background separator {
+  popover separator,
+  popover.background separator {
     background-color: #ffffff; }
   popover > list,
   popover > .view,
   popover > iconview,
   popover > toolbar,
-  popover > .inline-toolbar, popover.background > list,
+  popover > .inline-toolbar,
+  popover.background > list,
   popover.background > .view,
   popover.background > iconview,
   popover.background > toolbar,
@@ -2769,7 +2824,9 @@ colorchooser .popover.osd {
   border-color: #cfd6e6;
   background-color: white; }
 
-.context-menu, popover.touch-selection, .csd popover.touch-selection, popover.background.touch-selection, .csd popover.background.touch-selection {
+.context-menu, popover.touch-selection, .csd popover.touch-selection,
+popover.background.touch-selection, .csd
+popover.background.touch-selection {
   font: initial; }
 
 .monospace {
@@ -3042,10 +3099,14 @@ terminal-window notebook > header.top,
     color: #ffffff;
     text-shadow: none; }
 
-.nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator, popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle,
+.nautilus-canvas-item.dim-label, label.nautilus-canvas-item.separator,
+popover.background label.nautilus-canvas-item.separator, headerbar .nautilus-canvas-item.subtitle,
+.titlebar:not(headerbar) .nautilus-canvas-item.subtitle,
 .nautilus-list-dim-label {
   color: #818490; }
-  .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, headerbar .nautilus-canvas-item.subtitle:selected, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus, label.nautilus-canvas-item.separator:selected:focus, headerbar .nautilus-canvas-item.subtitle:selected:focus, .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected:focus,
+  .nautilus-canvas-item.dim-label:selected, label.nautilus-canvas-item.separator:selected, headerbar .nautilus-canvas-item.subtitle:selected,
+  .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected, .nautilus-canvas-item.dim-label:selected:focus, label.nautilus-canvas-item.separator:selected:focus, headerbar .nautilus-canvas-item.subtitle:selected:focus,
+  .titlebar:not(headerbar) .nautilus-canvas-item.subtitle:selected:focus,
   .nautilus-list-dim-label:selected,
   .nautilus-list-dim-label:selected:focus {
     color: #d9e4f3; }
@@ -4584,11 +4645,21 @@ filechooser placessidebar.sidebar scrollbar,
       .budgie-panel widget button:checked image {
         color: #ffffff; }
   .budgie-panel .workspace-switcher .workspace-layout {
-    background-color: #417AC3;
-    color: #ffffff; }
+    background-color: rgba(226, 228, 230, 0.93);
+    color: #0F1423; }
+  .budgie-panel .workspace-switcher .workspace-item grid {
+    background-color: transparent;
+    border-bottom: 2px solid rgba(15, 20, 35, 0.34);
+    margin-left: 4px;
+    margin-bottom: 0px; }
   .budgie-panel .workspace-switcher .current-workspace {
-    background-color: #709bd2;
-    color: #ffffff; }
+    background-color: rgba(65, 122, 195, 0.04);
+    color: #0F1423; }
+    .budgie-panel .workspace-switcher .current-workspace grid {
+      background-color: transparent;
+      border-bottom: 2px solid #417AC3;
+      margin-left: 2px;
+      margin-bottom: 0px; }
   .budgie-panel #tasklist-button {
     color: rgba(15, 20, 35, 0.78);
     background-color: rgba(237, 238, 239, 0.93); }
