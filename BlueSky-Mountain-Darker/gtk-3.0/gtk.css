@@ -4778,3 +4778,9 @@ filechooser placessidebar.sidebar scrollbar,
           background-color: transparent; }
           .budgie-settings-window viewport.frame .sidebar row:selected:hover label {
             color: #0F1423; }
+
+.background headerbar entry.pathbar {
+  margin: 0px;
+  padding: 0px;
+  padding-left: 4px;
+  padding-right: 4px; }
