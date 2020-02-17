@@ -1535,8 +1535,41 @@ popover, popover.background {
   padding: 2px;
   border-radius: 3px;
   background-clip: border-box;
-  background-color: #29384F;
+  background-color: #1f3c62;
   box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.35); }
+  popover stack button,
+  popover.background stack button {
+    background-color: #1F2A3B;
+    border-color: rgba(0, 0, 0, 0.78);
+    color: #E4E7EA; }
+    popover stack button label, popover stack button image,
+    popover.background stack button label,
+    popover.background stack button image {
+      color: #E4E7EA; }
+    popover stack button:hover,
+    popover.background stack button:hover {
+      background-color: #2B5489;
+      border-color: rgba(0, 0, 0, 0.78);
+      color: #ffffff; }
+      popover stack button:hover label, popover stack button:hover image,
+      popover.background stack button:hover label,
+      popover.background stack button:hover image {
+        color: #ffffff; }
+    popover stack button:active, popover stack button:focus, popover stack button:checked,
+    popover.background stack button:active,
+    popover.background stack button:focus,
+    popover.background stack button:checked {
+      background-color: #2B5489;
+      border-color: rgba(0, 0, 0, 0.78);
+      color: #ffffff; }
+      popover stack button:active label, popover stack button:active image, popover stack button:focus label, popover stack button:focus image, popover stack button:checked label, popover stack button:checked image,
+      popover.background stack button:active label,
+      popover.background stack button:active image,
+      popover.background stack button:focus label,
+      popover.background stack button:focus image,
+      popover.background stack button:checked label,
+      popover.background stack button:checked image {
+        color: #ffffff; }
   popover label,
   popover.background label {
     color: #E4E7EA;
@@ -1578,7 +1611,7 @@ popover, popover.background {
   .csd popover.background, popover.background {
     border: 1px solid #161e2a; }
   popover separator, popover.background separator {
-    background-color: #29384F; }
+    background-color: #1f3c62; }
   popover > list,
   popover > .view,
   popover > iconview,
