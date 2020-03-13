@@ -4360,6 +4360,29 @@ filechooser headerbar widget stack box.path-bar-box,
         color: #E4E7EA; }
   .nemo-window .sidebar separator {
     background-color: transparent; }
+.nemo-window toolbar.primary-toolbar widget.path-bar button, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button {
+  color: rgba(226, 231, 236, 0.8);
+  outline-offset: -3px;
+  background-color: #202c3e;
+  border-color: rgba(0, 0, 0, 0.4);
+  background-color: #202c3e;
+  margin: 0px; }
+  .nemo-window toolbar.primary-toolbar widget.path-bar button label, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button label, .nemo-window toolbar.primary-toolbar widget.path-bar button image, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button image {
+    color: rgba(226, 231, 236, 0.58); }
+.nemo-window toolbar.primary-toolbar widget.path-bar button:hover, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:hover {
+  background-color: rgba(55, 75, 106, 0.4);
+  color: rgba(226, 231, 236, 0.8);
+  border-color: rgba(55, 75, 106, 0.4);
+  margin: 0px; }
+  .nemo-window toolbar.primary-toolbar widget.path-bar button:hover label, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:hover label, .nemo-window toolbar.primary-toolbar widget.path-bar button:hover image, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:hover image {
+    color: rgba(226, 231, 236, 0.8); }
+.nemo-window toolbar.primary-toolbar widget.path-bar button:active, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:active, .nemo-window toolbar.primary-toolbar widget.path-bar button:checked, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:checked {
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #417AC3;
+  margin: 0px; }
+  .nemo-window toolbar.primary-toolbar widget.path-bar button:active label, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:active label, .nemo-window toolbar.primary-toolbar widget.path-bar button:active image, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:active image, .nemo-window toolbar.primary-toolbar widget.path-bar button:checked label, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:checked label, .nemo-window toolbar.primary-toolbar widget.path-bar button:checked image, .nemo-window .primary-toolbar.inline-toolbar widget.path-bar button:checked image {
+    color: #ffffff; }
 
 .caja-side-pane,
 .caja-side-pane > notebook > stack > widget > box,
