@@ -4346,6 +4346,9 @@ filechooser headerbar widget stack box.path-bar-box,
   notebook stack .view:backdrop {color: transparentize($fg_color, 0.66);}
 }
 //*/
+.nemo-window .nemo-window-pane scrolledwindow widget.view:selected {
+  background-image: linear-gradient(to right, #417AC3, #417AC3);
+  color: #ffffff; }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
   background-image: linear-gradient(to left, #ededed 50%, #ededed 50%);
   color: rgba(15, 20, 35, 0.78); }
