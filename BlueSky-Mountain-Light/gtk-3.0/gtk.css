@@ -1488,8 +1488,8 @@ menu, .menu {
     menu menuitem:hover, .menu menuitem:hover {
       background-color: #3c75be;
       color: #ffffff; }
-    menu menuitem:disabled, .menu menuitem:disabled {
-      color: rgba(15, 20, 35, 0.55); }
+    menu menuitem:disabled, menu menuitem:disabled label, .menu menuitem:disabled, .menu menuitem:disabled label {
+      color: rgba(255, 255, 255, 0.56); }
     menu menuitem arrow, .menu menuitem arrow {
       min-height: 16px;
       min-width: 16px; }
@@ -4180,7 +4180,8 @@ filechooser.csd.background, filechooser placessidebar list,
   background-color: transparent; }
 filechooser placessidebar.sidebar,
 .nautilus-window placessidebar.sidebar {
-  background-color: rgba(239, 240, 241, 0.93); }
+  background-color: rgba(239, 240, 241, 0.93);
+  margin-top: -4px; }
   filechooser placessidebar.sidebar row.sidebar-row,
   .nautilus-window placessidebar.sidebar row.sidebar-row {
     border: 1px solid transparent;
