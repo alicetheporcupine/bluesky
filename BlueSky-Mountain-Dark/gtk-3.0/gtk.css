@@ -365,7 +365,7 @@ button {
     box-shadow: none; }
   button.suggested-action {
     background-clip: border-box;
-    color: white;
+    color: #ffffff;
     background-color: #2B5489;
     border-color: #2B5489; }
     button.suggested-action.flat, button.suggested-action.sidebar-button {
@@ -375,12 +375,12 @@ button {
       color: #2B5489; }
     button.suggested-action:hover {
       background-clip: border-box;
-      color: white;
+      color: #ffffff;
       background-color: #376cb0;
       border-color: #376cb0; }
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
-      color: white;
+      color: #ffffff;
       background-color: #1f3c62;
       border-color: #1f3c62; }
     button.suggested-action.flat:disabled, button.suggested-action.sidebar-button:disabled {
@@ -395,24 +395,24 @@ button {
         color: rgba(228, 231, 234, 0.45); }
   button.destructive-action {
     background-clip: border-box;
-    color: white;
-    background-color: #F04A50;
-    border-color: #F04A50; }
+    color: #E4E7EA;
+    background-color: #cc575d;
+    border-color: #cc575d; }
     button.destructive-action.flat, button.destructive-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
-      color: #F04A50; }
+      color: #cc575d; }
     button.destructive-action:hover {
       background-clip: border-box;
-      color: white;
-      background-color: #f4797e;
-      border-color: #f4797e; }
+      color: #E4E7EA;
+      background-color: #d87e83;
+      border-color: #d87e83; }
     button.destructive-action:active, button.destructive-action:checked {
       background-clip: border-box;
-      color: white;
-      background-color: #ec1b22;
-      border-color: #ec1b22; }
+      color: #E4E7EA;
+      background-color: #b8383e;
+      border-color: #b8383e; }
     button.destructive-action.flat:disabled, button.destructive-action.sidebar-button:disabled {
       border-color: transparent;
       background-color: transparent;
@@ -1175,24 +1175,26 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:checked + entry {
   border-left-color: rgba(0, 0, 0, 0.4); }
 .primary-toolbar button.suggested-action, headerbar button.suggested-action {
   background-clip: border-box;
-  color: white;
-  background-color: #2B5489;
-  border-color: #2B5489; }
+  color: rgba(226, 231, 236, 0.8);
+  background-color: #202c3e;
+  border-color: #202c3e; }
   .primary-toolbar button.suggested-action.flat, headerbar button.suggested-action.flat, .primary-toolbar button.suggested-action.sidebar-button, headerbar button.suggested-action.sidebar-button {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: #2B5489; }
+    color: #202c3e; }
   .primary-toolbar button.suggested-action:hover, headerbar button.suggested-action:hover {
     background-clip: border-box;
-    color: white;
-    background-color: #376cb0;
-    border-color: #376cb0; }
+    color: #2B5489;
+    background-color: rgba(60, 82, 116, 0.4);
+    border-color: rgba(60, 82, 116, 0.4);
+    border-color: rgba(0, 0, 0, 0.4); }
   .primary-toolbar button.suggested-action:active, headerbar button.suggested-action:active, .primary-toolbar button.suggested-action:checked, headerbar button.suggested-action:checked {
     background-clip: border-box;
-    color: white;
-    background-color: #1f3c62;
-    border-color: #1f3c62; }
+    color: #ffffff;
+    background-color: #2B5489;
+    border-color: #2B5489;
+    border-color: #2B5489; }
   .primary-toolbar button.suggested-action.flat:disabled, headerbar button.suggested-action.flat:disabled, .primary-toolbar button.suggested-action.sidebar-button:disabled, headerbar button.suggested-action.sidebar-button:disabled, .primary-toolbar button.suggested-action:disabled, headerbar button.suggested-action:disabled {
     background-color: rgba(15, 20, 29, 0);
     border-color: rgba(15, 20, 29, 0); }
@@ -1204,24 +1206,26 @@ headerbar button.suggested-action:backdrop {
   opacity: 0.8; }
 .primary-toolbar button.destructive-action, headerbar button.destructive-action {
   background-clip: border-box;
-  color: white;
-  background-color: #F04A50;
-  border-color: #F04A50; }
+  color: #E4E7EA;
+  background-color: #cc575d;
+  border-color: #cc575d; }
   .primary-toolbar button.destructive-action.flat, headerbar button.destructive-action.flat, .primary-toolbar button.destructive-action.sidebar-button, headerbar button.destructive-action.sidebar-button {
     border-color: transparent;
     background-color: transparent;
     background-image: none;
-    color: #F04A50; }
+    color: #cc575d; }
   .primary-toolbar button.destructive-action:hover, headerbar button.destructive-action:hover {
     background-clip: border-box;
-    color: white;
-    background-color: #f4797e;
-    border-color: #f4797e; }
+    color: #2B5489;
+    background-color: rgba(60, 82, 116, 0.4);
+    border-color: rgba(60, 82, 116, 0.4);
+    border-color: rgba(0, 0, 0, 0.4); }
   .primary-toolbar button.destructive-action:active, headerbar button.destructive-action:active, .primary-toolbar button.destructive-action:checked, headerbar button.destructive-action:checked {
     background-clip: border-box;
-    color: white;
-    background-color: #ec1b22;
-    border-color: #ec1b22; }
+    color: #ffffff;
+    background-color: #2B5489;
+    border-color: #2B5489;
+    border-color: #2B5489; }
   .primary-toolbar button.destructive-action.flat:disabled, headerbar button.destructive-action.flat:disabled, .primary-toolbar button.destructive-action.sidebar-button:disabled, headerbar button.destructive-action.sidebar-button:disabled, .primary-toolbar button.destructive-action:disabled, headerbar button.destructive-action:disabled {
     background-color: rgba(15, 20, 29, 0);
     border-color: rgba(15, 20, 29, 0); }
@@ -4128,18 +4132,18 @@ GtkListBox .h4 {
 #shutdown_button.button {
   background-clip: border-box;
   color: green;
-  background-color: #F04A50;
-  border-color: #F04A50; }
+  background-color: #cc575d;
+  border-color: #cc575d; }
   #shutdown_button.button:hover {
     background-clip: border-box;
     color: green;
-    background-color: #f4797e;
-    border-color: #f4797e; }
+    background-color: #d87e83;
+    border-color: #d87e83; }
   #shutdown_button.button:active, #shutdown_button.button:checked {
     background-clip: border-box;
     color: green;
-    background-color: #ec1b22;
-    border-color: #ec1b22; }
+    background-color: #b8383e;
+    border-color: #b8383e; }
 
 #restart_button.button {
   background-clip: border-box;
