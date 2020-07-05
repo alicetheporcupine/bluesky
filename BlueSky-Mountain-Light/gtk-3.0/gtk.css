@@ -1100,7 +1100,14 @@ headerbar .linked:not(.vertical):not(.path-bar) > button:not(:checked):not(:acti
 headerbar .linked:not(.vertical).path-bar > button {
   border-color: #6792c9;
   color: rgba(8, 12, 25, 0.9);
-  background-color: #84a7d3; }
+  background-color: #84a7d3;
+  color: rgba(13, 19, 38, 0.68); }
+  .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
+  .primary-toolbar .linked:not(.vertical).path-bar > button label,
+  headerbar .linked:not(.vertical).path-bar > button label,
+  .primary-toolbar .linked:not(.vertical).path-bar > button image,
+  headerbar .linked:not(.vertical).path-bar > button image {
+    color: inherit; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button image,
   .primary-toolbar .linked:not(.vertical).path-bar > button label,
   headerbar .linked:not(.vertical).path-bar > button label,
@@ -1110,18 +1117,15 @@ headerbar .linked:not(.vertical).path-bar > button {
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover,
   .primary-toolbar .linked:not(.vertical).path-bar > button:hover,
   headerbar .linked:not(.vertical).path-bar > button:hover {
-    /*//background-color: lighten($header_button_bg, 15%);
-    //add 1.0
-    background-color: if($variant == 'dark' or $darker == 'true', lighten($header_button_bg, 15%), lighten($selected_bg_color, 25%));
-        //add 1.1
-        color: if($variant=='dark' or $darker=='true', transparentize($selected_fg_color,0.4), transparentize($selected_fg_color, 0.1));
-    //*/
-    background-color: #87abd9;
-    color: rgba(13, 19, 38, 0.9);
-    border-color: #87abd9;
-    background-color: #87abd9;
-    color: rgba(13, 19, 38, 0.9);
-    border-color: #87abd9; }
+    border-color: #6792c9;
+    color: rgba(8, 12, 25, 0.9);
+    background-color: #84a7d3; }
+    .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover label, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:hover image,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:hover label,
+    headerbar .linked:not(.vertical).path-bar > button:hover label,
+    .primary-toolbar .linked:not(.vertical).path-bar > button:hover image,
+    headerbar .linked:not(.vertical).path-bar > button:hover image {
+      color: inherit; }
   .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:active, .primary-toolbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked, headerbar .linked:not(.vertical):not(.path-bar).stack-switcher > button:checked,
   .primary-toolbar .linked:not(.vertical).path-bar > button:active,
   headerbar .linked:not(.vertical).path-bar > button:active,
@@ -3559,10 +3563,6 @@ button.documents-favorite:active:hover {
     background-image: -gtk-gradient(linear, 0 0, 1 0, color-stop(0, transparent), color-stop(0.04, transparent), color-stop(0.04, #417AC3), color-stop(0.25, #417AC3), color-stop(0.25, transparent), color-stop(1, transparent)); }
     .tweak-categories .tweak-category:selected label {
       color: #0F1423; }
-    .tweak-categories .tweak-category:selected:hover {
-      background-color: transparent; }
-      .tweak-categories .tweak-category:selected:hover label {
-        color: #0F1423; }
 
 .tr-workarea undershoot,
 .tr-workarea overshoot {
