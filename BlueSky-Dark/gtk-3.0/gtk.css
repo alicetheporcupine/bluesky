@@ -4044,6 +4044,42 @@ panel-toplevel.background button:not(#tasklist-button) {
   border: 0.5px solid #2f3f59;
   border-radius: 2px; }
 
+#whiskermenu-window {
+  background-image: linear-gradient(to left, #1F2A3B, #1F2A3B);
+  color: #E4E7EA; }
+  #whiskermenu-window stack {
+    background-image: linear-gradient(to left, #1F2A3B, #1F2A3B);
+    color: #E4E7EA; }
+  #whiskermenu-window .view, #whiskermenu-window iconview {
+    background-color: #29384F;
+    color: #E4E7EA; }
+    #whiskermenu-window .view:selected, #whiskermenu-window iconview:selected {
+      background-color: #3c5274;
+      color: #E4E7EA; }
+  #whiskermenu-window button {
+    margin-right: 9px;
+    background-color: #1F2A3B;
+    color: #E4E7EA; }
+    #whiskermenu-window button:hover {
+      background-color: #324460;
+      color: #E4E7EA; }
+    #whiskermenu-window button:active, #whiskermenu-window button:checked {
+      background-color: #2B5489;
+      color: #ffffff; }
+  #whiskermenu-window entry:focus, #whiskermenu-window entry.search {
+    color: #E4E7EA;
+    border-color: #2B5489;
+    background-color: #1f2a3b;
+    box-shadow: inset 1px 0 #2B5489, inset -1px 0 #2B5489, inset 0 1px #2B5489, inset 0 -1px #2B5489; }
+    #whiskermenu-window entry:focus image, #whiskermenu-window entry:focus image:hover, #whiskermenu-window entry.search image, #whiskermenu-window entry.search image:hover {
+      color: inherit; }
+
+#whiskermenu-button {
+  color: #E4E7EA;
+  border-left: 22px solid rgba(62, 72, 86, 0.93);
+  border-right: 22px solid rgba(62, 72, 86, 0.93);
+  background-color: rgba(62, 72, 86, 0.93); }
+
 .caja-side-pane,
 .caja-side-pane > notebook > stack > widget > box,
 .caja-side-pane text,
