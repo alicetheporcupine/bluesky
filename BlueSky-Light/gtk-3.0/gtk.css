@@ -78,7 +78,7 @@ textview {
 .scale-popup button:hover {
   color: #0F1423;
   border-color: #d0d7eb;
-  background-color: white; }
+  background-color: #dde0f7; }
 
 .context-menu, popover.touch-selection, .csd popover.touch-selection, popover.background.touch-selection, .csd popover.background.touch-selection {
   font: initial; }
@@ -367,6 +367,8 @@ button {
   color: #0F1423;
   border-color: #d0d7eb;
   background-color: #fafbfe; }
+  button:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -382,7 +384,7 @@ button {
   button:hover {
     color: #0F1423;
     border-color: #d0d7eb;
-    background-color: white;
+    background-color: #dde0f7;
     -gtk-icon-effect: highlight; }
   button:active, button:checked {
     color: #ffffff;
@@ -390,6 +392,8 @@ button {
     background-color: #417AC3;
     background-clip: border-box;
     transition-duration: 50ms; }
+    button:active:backdrop, button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
@@ -590,14 +594,18 @@ button {
   color: #0F1423;
   border-color: #d0d7eb;
   background-color: #fafbfe; }
+  .inline-toolbar toolbutton > button:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
   .inline-toolbar toolbutton > button:hover {
     color: #0F1423;
     border-color: #d0d7eb;
-    background-color: white; }
+    background-color: #dde0f7; }
   .inline-toolbar toolbutton > button:active, .inline-toolbar toolbutton > button:checked {
     color: #ffffff;
     border-color: #417AC3;
     background-color: #417AC3; }
+    .inline-toolbar toolbutton > button:active:backdrop, .inline-toolbar toolbutton > button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   .inline-toolbar toolbutton > button:disabled {
     border-color: rgba(208, 215, 235, 0.55);
     background-color: rgba(250, 251, 254, 0.55); }
@@ -3080,10 +3088,12 @@ colorswatch#add-color-button {
   color: #0F1423;
   border-color: #d0d7eb;
   background-color: #fafbfe; }
+  colorswatch#add-color-button:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
   colorswatch#add-color-button:hover {
     color: #0F1423;
     border-color: #d0d7eb;
-    background-color: white; }
+    background-color: #dde0f7; }
   colorswatch#add-color-button overlay {
     border-color: transparent;
     background-color: transparent;
@@ -3190,6 +3200,9 @@ filechooser placessidebar.sidebar,
         color: #ffffff;
         border-color: #417AC3;
         background-color: #417AC3; }
+        filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop,
+        .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop {
+          color: rgba(255, 255, 255, 0.67); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
@@ -4027,6 +4040,8 @@ panel-toplevel.background button:not(#tasklist-button) {
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(228, 230, 231, 0.93);
     color: #0F1423; }
+  .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
 .thunar notebook .view, .thunar notebook iconview {
   background-color: #ffffff;
   background-image: linear-gradient(to left, #fafafa 50%, #ffffff 50%);
@@ -4038,6 +4053,8 @@ panel-toplevel.background button:not(#tasklist-button) {
     background-color: #417AC3;
     background-image: linear-gradient(to right, #417AC3, #417AC3);
     color: #ffffff; }
+  .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
 .thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
   background-color: transparent;
   border: 0.5px solid transparent;
@@ -4722,14 +4739,18 @@ panel-toplevel.background na-tray-applet {
   color: #0F1423;
   border-color: #d0d7eb;
   background-color: #fafbfe; }
+  #content_frame button:backdrop {
+    color: rgba(15, 20, 35, 0.67); }
   #content_frame button:hover {
     color: #0F1423;
     border-color: #d0d7eb;
-    background-color: white; }
+    background-color: #dde0f7; }
   #content_frame button:active, #content_frame button:checked {
     color: #ffffff;
     border-color: #417AC3;
     background-color: #417AC3; }
+    #content_frame button:active:backdrop, #content_frame button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   #content_frame button:disabled {
     border-color: rgba(208, 215, 235, 0.55);
     background-color: rgba(250, 251, 254, 0.55); }

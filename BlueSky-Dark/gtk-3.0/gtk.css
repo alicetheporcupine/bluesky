@@ -368,6 +368,8 @@ button {
   color: #E4E7EA;
   border-color: #1f2a3b;
   background-color: #232f42; }
+  button:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
   button separator {
     margin: 4px 1px; }
   button.flat, button.sidebar-button {
@@ -391,6 +393,8 @@ button {
     background-color: #2B5489;
     background-clip: padding-box;
     transition-duration: 50ms; }
+    button:active:backdrop, button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
     button:active:not(:disabled) label:disabled, button:checked:not(:disabled) label:disabled {
       color: inherit;
       opacity: 0.6; }
@@ -591,6 +595,8 @@ button {
   color: #E4E7EA;
   border-color: #1f2a3b;
   background-color: #232f42; }
+  .inline-toolbar toolbutton > button:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
   .inline-toolbar toolbutton > button:hover {
     color: #E4E7EA;
     border-color: #1f2a3b;
@@ -599,6 +605,8 @@ button {
     color: #ffffff;
     border-color: #1f2a3b;
     background-color: #2B5489; }
+    .inline-toolbar toolbutton > button:active:backdrop, .inline-toolbar toolbutton > button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   .inline-toolbar toolbutton > button:disabled {
     border-color: rgba(31, 42, 59, 0.55);
     background-color: rgba(35, 47, 66, 0.55); }
@@ -3077,6 +3085,8 @@ colorswatch#add-color-button {
   color: #E4E7EA;
   border-color: #1f2a3b;
   background-color: #232f42; }
+  colorswatch#add-color-button:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
   colorswatch#add-color-button:hover {
     color: #E4E7EA;
     border-color: #1f2a3b;
@@ -3183,6 +3193,9 @@ filechooser placessidebar.sidebar,
         color: #ffffff;
         border-color: #1f2a3b;
         background-color: #2B5489; }
+        filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop,
+        .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:active:backdrop {
+          color: rgba(255, 255, 255, 0.67); }
       filechooser placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image,
       .nautilus-window placessidebar.sidebar row.sidebar-row:not(:selected) button.sidebar-button:not(:hover):not(:active) > image {
         opacity: 0.5; }
@@ -4020,6 +4033,8 @@ panel-toplevel.background button:not(#tasklist-button) {
   .thunar .sidebar .view.cell:hover, .thunar .sidebar iconview.cell:hover, .thunar .sidebar .view.cell:active, .thunar .sidebar iconview.cell:active {
     background-color: rgba(38, 44, 53, 0.93);
     color: #E4E7EA; }
+  .thunar .sidebar .view:backdrop, .thunar .sidebar iconview:backdrop, .thunar .sidebar .view.cell:backdrop, .thunar .sidebar iconview.cell:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
 .thunar notebook .view, .thunar notebook iconview {
   background-color: #1F2A3B;
   background-image: linear-gradient(to left, #1b2534 50%, #1F2A3B 50%);
@@ -4031,6 +4046,8 @@ panel-toplevel.background button:not(#tasklist-button) {
     background-color: #2B5489;
     background-image: linear-gradient(to right, #2B5489, #2B5489);
     color: #ffffff; }
+  .thunar notebook .view:backdrop, .thunar notebook iconview:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
 .thunar notebook tabs > tab button.flat image, .thunar notebook tabs > tab button.sidebar-button image {
   background-color: transparent;
   border: 0.5px solid transparent;
@@ -4716,6 +4733,8 @@ panel-toplevel.background na-tray-applet {
   color: #E4E7EA;
   border-color: #1f2a3b;
   background-color: #232f42; }
+  #content_frame button:backdrop {
+    color: rgba(228, 231, 234, 0.67); }
   #content_frame button:hover {
     color: #E4E7EA;
     border-color: #1f2a3b;
@@ -4724,6 +4743,8 @@ panel-toplevel.background na-tray-applet {
     color: #ffffff;
     border-color: #1f2a3b;
     background-color: #2B5489; }
+    #content_frame button:active:backdrop, #content_frame button:checked:backdrop {
+      color: rgba(255, 255, 255, 0.67); }
   #content_frame button:disabled {
     border-color: rgba(31, 42, 59, 0.55);
     background-color: rgba(35, 47, 66, 0.55); }
