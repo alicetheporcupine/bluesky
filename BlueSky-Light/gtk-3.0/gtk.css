@@ -3864,15 +3864,30 @@ filechooser placessidebar.sidebar scrollbar,
   background-color: #417AC3;
   color: #ffffff; }
 
-.nemo-window .nemo-window-pane scrolledwindow widget.view:selected {
+.nemo-window .nemo-window-pane .view:selected, .nemo-window .nemo-window-pane iconview:selected {
   background-image: linear-gradient(to right, #417AC3, #417AC3);
   color: #ffffff; }
+  .nemo-window .nemo-window-pane .view:selected:backdrop, .nemo-window .nemo-window-pane iconview:selected:backdrop {
+    background-image: linear-gradient(to right, rgba(65, 122, 195, 0.67), rgba(65, 122, 195, 0.67));
+    color: rgba(255, 255, 255, 0.67); }
 .nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview {
   background-image: linear-gradient(to left, #ededed 50%, #ededed 50%);
   color: rgba(15, 20, 35, 0.78); }
+  .nemo-window .nemo-inactive-pane .view:selected, .nemo-window .nemo-inactive-pane iconview:selected {
+    background-image: linear-gradient(to right, rgba(106, 127, 154, 0.67), rgba(106, 127, 154, 0.67));
+    color: rgba(255, 255, 255, 0.67); }
+    .nemo-window .nemo-inactive-pane .view:selected:backdrop, .nemo-window .nemo-inactive-pane iconview:selected:backdrop {
+      background-image: linear-gradient(to right, rgba(106, 127, 154, 0.45), rgba(106, 127, 154, 0.45));
+      color: rgba(255, 255, 255, 0.45); }
 .nemo-window .nemo-inactive-pane .iconview {
   background-image: linear-gradient(to left, #ededed 50%, #ededed 50%);
   color: rgba(15, 20, 35, 0.78); }
+  .nemo-window .nemo-inactive-pane .iconview:selected {
+    background-image: linear-gradient(to right, rgba(106, 127, 154, 0.67), rgba(106, 127, 154, 0.67));
+    color: rgba(255, 255, 255, 0.67); }
+    .nemo-window .nemo-inactive-pane .iconview:selected:backdrop {
+      background-image: linear-gradient(to right, rgba(106, 127, 154, 0.45), rgba(106, 127, 154, 0.45));
+      color: rgba(255, 255, 255, 0.45); }
 .nemo-window .sidebar {
   color: #0F1423;
   background-color: rgba(239, 240, 241, 0.93); }
