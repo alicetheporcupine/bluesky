@@ -1892,7 +1892,7 @@ cursor-handle {
 notebook {
   padding: 0; }
   notebook.frame {
-    border: 1px solid #cdd1f3; }
+    border: 0px solid #cdd1f3; }
     notebook.frame > header {
       margin: -1px; }
       notebook.frame > header.top {
@@ -1912,16 +1912,8 @@ notebook {
   notebook > stack:not(:only-child) {
     background-image: linear-gradient(to left, #fafafa 50%, #ffffff 50%); }
   notebook > header {
-    padding: 2px;
-    background-color: #F2F3FC; }
-    notebook > header.top {
-      box-shadow: inset 0 -1px #cdd1f3; }
-    notebook > header.bottom {
-      box-shadow: inset 0 1px #cdd1f3; }
-    notebook > header.right {
-      box-shadow: inset 1px 0 #cdd1f3; }
-    notebook > header.left {
-      box-shadow: inset -1px 0 #cdd1f3; }
+    padding: 1px 0 0 1px;
+    background-color: #e6e8f9; }
     notebook > header.top {
       padding-bottom: 0; }
       notebook > header.top > tabs > tab {
@@ -1930,8 +1922,9 @@ notebook {
         min-height: 20px;
         outline-offset: -4px;
         border: 0px solid transparent;
-        padding-bottom: 2px;
         border-bottom: none;
+        border-bottom: 2px solid transparent;
+        margin: 0 0 1px 0;
         border-radius: 1px 1px 0 0; }
         notebook > header.top > tabs > tab + tab {
           margin-left: -1px; }
@@ -1943,8 +1936,9 @@ notebook {
         min-height: 20px;
         outline-offset: -4px;
         border: 0px solid transparent;
-        padding-bottom: 2px;
         border-top: none;
+        border-bottom: 2px solid transparent;
+        margin: 0 0 1px 0;
         border-radius: 0 0 1px 1px; }
         notebook > header.bottom > tabs > tab + tab {
           margin-left: -1px; }
@@ -1956,8 +1950,9 @@ notebook {
         min-height: 20px;
         outline-offset: -4px;
         border: 0px solid transparent;
-        padding-bottom: 2px;
         border-left: none;
+        border-bottom: 2px solid transparent;
+        margin: 0 0 1px 0;
         border-radius: 0 1px 1px 0; }
         notebook > header.right > tabs > tab + tab {
           margin-top: -1px; }
@@ -1969,8 +1964,9 @@ notebook {
         min-height: 20px;
         outline-offset: -4px;
         border: 0px solid transparent;
-        padding-bottom: 2px;
         border-right: none;
+        border-bottom: 2px solid transparent;
+        margin: 0 0 1px 0;
         border-radius: 1px 0 0 1px; }
         notebook > header.left > tabs > tab + tab {
           margin-top: -1px; }
@@ -1998,34 +1994,25 @@ notebook {
         color: #0F1423; }
       notebook > header > tabs > arrow:disabled {
         color: rgba(15, 20, 35, 0.25); }
-    notebook > header.top > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 -1px #cdd1f3; }
-    notebook > header.bottom > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 0 1px #cdd1f3; }
-    notebook > header.left > tabs > tab:hover:not(:checked) {
-      box-shadow: inset -1px 0 #cdd1f3; }
-    notebook > header.right > tabs > tab:hover:not(:checked) {
-      box-shadow: inset 1px 0 #cdd1f3; }
     notebook > header > tabs > tab {
       color: rgba(15, 20, 35, 0.55);
-      background-color: rgba(255, 255, 255, 0); }
+      background-color: rgba(255, 255, 255, 0);
+      border-bottom: 2px solid transparent; }
       notebook > header > tabs > tab:backdrop {
         color: rgba(15, 20, 35, 0.33); }
       notebook > header > tabs > tab:hover:not(:checked) {
         color: rgba(15, 20, 35, 0.775);
         background-color: rgba(255, 255, 255, 0.5);
-        border-color: #cdd1f3; }
+        border-bottom: 2px solid #e6e8f9; }
         notebook > header > tabs > tab:hover:not(:checked):backdrop {
-          color: rgba(15, 20, 35, 0.44); }
+          color: rgba(15, 20, 35, 0.33); }
       notebook > header > tabs > tab:checked {
         color: #0F1423;
-        background-color: #ffffff;
-        border-bottom: 2px solid #417AC3;
-        padding-bottom: 0px; }
+        background-color: #d5d8f5;
+        border-bottom: 2px solid #417AC3; }
         notebook > header > tabs > tab:checked:backdrop {
-          color: rgba(15, 20, 35, 0.34);
-          border-bottom: 2px solid rgba(65, 122, 195, 0.34);
-          padding-bottom: 0px; }
+          color: rgba(15, 20, 35, 0.67);
+          border-bottom: 2px solid rgba(65, 122, 195, 0.67); }
       notebook > header > tabs > tab button.flat, notebook > header > tabs > tab button.sidebar-button {
         min-height: 22px;
         min-width: 16px;
