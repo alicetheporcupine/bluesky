@@ -1053,7 +1053,9 @@ window > .titlebar:not(headerbar), window > .titlebar:not(headerbar):backdrop, w
   .primary-toolbar button label, headerbar button label, .primary-toolbar button image, headerbar button image {
     color: inherit; }
   .primary-toolbar button:backdrop, headerbar button:backdrop {
-    opacity: 0.7; }
+    opacity: 0.6; }
+    .primary-toolbar button:backdrop label, headerbar button:backdrop label, .primary-toolbar button:backdrop, headerbar button:backdrop {
+      color: rgba(226, 231, 236, 0.8); }
   .primary-toolbar button:hover, headerbar button:hover {
     border-color: #131720;
     color: rgba(231, 235, 240, 0.8);
