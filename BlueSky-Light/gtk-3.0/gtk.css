@@ -504,64 +504,88 @@ button {
     box-shadow: none; }
   button.suggested-action {
     background-clip: border-box;
-    color: #ffffff;
-    background-color: #417AC3;
-    border-color: #417AC3; }
+    color: #0F1423;
+    background-color: #709bd2;
+    border-color: #709bd2; }
+    button.suggested-action label {
+      color: inherit; }
     button.suggested-action.flat, button.suggested-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
-      color: #417AC3; }
+      color: #709bd2; }
+      button.suggested-action.flat label, button.suggested-action.sidebar-button label {
+        color: inherit; }
     button.suggested-action:hover {
       background-clip: border-box;
-      color: #ffffff;
-      background-color: #6895cf;
-      border-color: #6895cf; }
+      color: #0F1423;
+      background-color: #96b6de;
+      border-color: #96b6de; }
+      button.suggested-action:hover label {
+        color: inherit; }
     button.suggested-action:active, button.suggested-action:checked {
       background-clip: border-box;
-      color: #ffffff;
-      background-color: #32629f;
-      border-color: #32629f; }
+      color: #0F1423;
+      background-color: #7fa5d7;
+      border-color: #7fa5d7; }
+      button.suggested-action:active label, button.suggested-action:checked label {
+        color: inherit; }
     button.suggested-action.flat:disabled, button.suggested-action.sidebar-button:disabled {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: rgba(15, 20, 35, 0.55); }
+      button.suggested-action.flat:disabled label, button.suggested-action.sidebar-button:disabled label {
+        color: inherit; }
     button.suggested-action:disabled {
       border-color: rgba(208, 215, 235, 0.55);
       background-color: rgba(250, 251, 254, 0.55); }
       button.suggested-action:disabled label, button.suggested-action:disabled {
         color: rgba(15, 20, 35, 0.55); }
+      button.suggested-action:disabled label {
+        color: inherit; }
   button.destructive-action {
     background-clip: border-box;
     color: #0F1423;
     background-color: #f46067;
     border-color: #f46067; }
+    button.destructive-action label {
+      color: inherit; }
     button.destructive-action.flat, button.destructive-action.sidebar-button {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: #f46067; }
+      button.destructive-action.flat label, button.destructive-action.sidebar-button label {
+        color: inherit; }
     button.destructive-action:hover {
       background-clip: border-box;
       color: #0F1423;
       background-color: #f79095;
       border-color: #f79095; }
+      button.destructive-action:hover label {
+        color: inherit; }
     button.destructive-action:active, button.destructive-action:checked {
       background-clip: border-box;
       color: #0F1423;
-      background-color: #f13039;
-      border-color: #f13039; }
+      background-color: #f57379;
+      border-color: #f57379; }
+      button.destructive-action:active label, button.destructive-action:checked label {
+        color: inherit; }
     button.destructive-action.flat:disabled, button.destructive-action.sidebar-button:disabled {
       border-color: transparent;
       background-color: transparent;
       background-image: none;
       color: rgba(15, 20, 35, 0.55); }
+      button.destructive-action.flat:disabled label, button.destructive-action.sidebar-button:disabled label {
+        color: inherit; }
     button.destructive-action:disabled {
       border-color: rgba(208, 215, 235, 0.55);
       background-color: rgba(250, 251, 254, 0.55); }
       button.destructive-action:disabled label, button.destructive-action:disabled {
         color: rgba(15, 20, 35, 0.55); }
+      button.destructive-action:disabled label {
+        color: inherit; }
   .stack-switcher > button {
     outline-offset: -3px; }
     .stack-switcher > button > label {
@@ -4825,18 +4849,18 @@ popover {
 #restart_button.button {
   background-clip: border-box;
   color: green;
-  background-color: #417AC3;
-  border-color: #417AC3; }
+  background-color: #709bd2;
+  border-color: #709bd2; }
   #restart_button.button:hover {
     background-clip: border-box;
     color: green;
-    background-color: #6895cf;
-    border-color: #6895cf; }
+    background-color: #96b6de;
+    border-color: #96b6de; }
   #restart_button.button:active, #restart_button.button:checked {
     background-clip: border-box;
     color: green;
-    background-color: #32629f;
-    border-color: #32629f; }
+    background-color: #497fc5;
+    border-color: #497fc5; }
 
 #greeter_infobar {
   border-bottom-width: 0;
