@@ -2965,11 +2965,17 @@ tooltip {
 
 overlay calendar-view event {
   background-image: linear-gradient(to bottom right, #c1d4eb 30%, #e0e9f5 70%);
-  border: 2px solid #d0def0; }
+  border: 0px solid #d0def0; }
   overlay calendar-view event label {
     color: rgba(15, 20, 35, 0.78);
     padding: 4px 6px;
     font-weight: normal; }
+
+event.slanted-end label, event.slanted-end {
+  color: rgba(0, 0, 0, 0.8);
+  padding: 4px 6px; }
+event.slanted-end:backdrop label, event.slanted-end:backdrop {
+  color: rgba(0, 0, 0, 0.5); }
 
 colorswatch, colorswatch:drop(active) {
   border-style: none; }
