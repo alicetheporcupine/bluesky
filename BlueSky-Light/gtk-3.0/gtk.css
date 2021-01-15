@@ -3487,6 +3487,14 @@ filechooser headerbar widget stack box.path-bar-box,
   .gedit-map-frame border:dir(rtl) {
     border-right-width: 1px; }
 
+paned.gedit-side-panel-paned treeview {
+  background-color: rgba(239, 240, 241, 0.93);
+  color: #0F1423;
+  border-color: #cdd1f3; }
+  paned.gedit-side-panel-paned treeview:backdrop {
+    color: rgba(15, 20, 35, 0.67);
+    border-color: #cdd1f3; }
+
 .gedit-bottom-panel-paned notebook > header.top > tabs > tab:checked,
 terminal-window notebook > header.top > tabs > tab:checked {
   box-shadow: inset 0 -1px #cdd1f3; }
